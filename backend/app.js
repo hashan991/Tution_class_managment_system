@@ -16,6 +16,6 @@ app.use(express.json());
 app.use(cors());
 
  //Routes
-app.use('/api/class', examRoutes);
+app.use('/api/exam', examRoutes);
 
 module.exports = app;
