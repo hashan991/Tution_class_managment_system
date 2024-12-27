@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 const ExamForm = ({ onSubmit , existingExam}) => {
-    const [name, setName] = useState(existingExam ? existingExam.name : '');
-    const [date, setDescription] = useState(existingExam ? existingExam.date :'');
+    const [name, setName] = useState( '');
+    const [date, setDescription] = useState('');
   
     useEffect(() => {
         if (existingExam) {

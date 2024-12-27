@@ -12,25 +12,25 @@ const ExamFormPage = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (state?.exam) {
-          setEditingExam(state.exam);  // Set the item data passed via state
+        if (state?.exam3) {
+          setEditingExam(state.exam3);  // Set the item data passed via state
           
         }
       }, [state]);
 
 
-    const handleCreate = async (exam) => {
+    const handleCreate = async (exam2) => {
         try {
-          await createExam(exam);  // Create a new item
+          await createExam(exam2);  // Create a new item
           navigate('/ExamTablePage');  // Redirect to the item list page after creation
         } catch (error) {
           console.error('Error creating item:', error);
         }
       };
 
-      const handleUpdate = async (exam) => {
+      const handleUpdate = async (exam1) => {
         try {
-          await updateExam(editingExam._id, exam);  // Update the existing item
+          await updateExam(editingExam._id, exam1);  // Update the existing item
           navigate('/ExamTablePage');  // Redirect to the item list page after updating
         } catch (error) {
           console.error('Error updating item:', error);

@@ -32,10 +32,10 @@ const handleDelete = async (id) => {
   }
 };
 
-const handleEdit = (exam) => {
+const handleEdit = (exam3) => {
   // Navigate to the edit page and pass the item data as state
-  console.log('Navigating with item:', exam);
-  navigate('/ExamFormPage', { state: { exam } });
+  console.log('Navigating with item:', exam3);
+  navigate('/ExamFormPage', { state: { exam3 } });
 };
 
     return(
