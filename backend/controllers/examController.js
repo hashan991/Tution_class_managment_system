@@ -2,8 +2,8 @@ const Exam = require("../models/examModel");
 
 exports.getExams = async (req , res) => {
     try {
-        const exames = await Exam.find();
-        res.json(exames);
+        const exam = await Exam.find();
+        res.json(exam);
     } catch (error) {
         res.status(500).json({ message: 'Error fetching items', error });
     }
