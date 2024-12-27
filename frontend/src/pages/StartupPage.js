@@ -1,10 +1,15 @@
+import { useNavigate } from 'react-router-dom';
 
 
-const ExamTablePage = () => {
+const StartupPage = () => {
+    const navigate = useNavigate();
+
     return (
         <div>
-            <h1>ExamTablePage</h1>
+            <h1>welcome first edu lanka </h1>
+            <button onClick={() => navigate('/ExamTablePage')}>VIEW Exam</button>
+
         </div>
     )
 }
-export default ExamTablePage;
+export default StartupPage;
