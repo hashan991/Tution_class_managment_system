@@ -7,7 +7,7 @@ exports.getExams = async (req , res) => {
     } catch (error) {
         res.status(500).json({ message: 'Error fetching items', error });
     }
-};
+ };
 
 exports.createExam = async (req ,res) => {
     const { name, date } = req.body;
