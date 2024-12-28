@@ -3,6 +3,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const examRoutes = require('./routes/examRoutes');
+const authRoutes = require('./routes/authRoutes');
 
 dotenv.config();
 
@@ -17,5 +18,6 @@ app.use(cors());
 
  //Routes
 app.use('/api/exam', examRoutes);
+app.use('/api/auth', authRoutes);
 
 module.exports = app;
