@@ -1,18 +1,15 @@
 import React from 'react';
 import { BrowserRouter,  Route, Routes } from 'react-router-dom';
-import ExamTablePage from './pages/ExamTablePage';
+
+import StartupPage from './pages/StartupPage';
 
 function App() {
   return (
-  <BrowserRouter>
-
-    
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ExamTablePage />} />
+        <Route path="/" element={<StartupPage />} />
       </Routes>
-
-  </BrowserRouter>
-
+    </BrowserRouter>
   );
 }
 
