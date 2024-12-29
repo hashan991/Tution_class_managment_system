@@ -1,4 +1,3 @@
-
 import React from "react";
 import pngwing from "../assets/pngwing.png";
 import pngwing1 from "../assets/qqq.png";
@@ -439,7 +438,7 @@ const StartupPage = () => {
           }}
         >
           <Button
-          sx={{
+            sx={{
               fontSize: "1.5rem",
               padding: "15px 35px",
               borderRadius: "50px",
@@ -461,6 +460,5 @@ const StartupPage = () => {
     </Box>
   );
 };
-
 
 export default StartupPage;
