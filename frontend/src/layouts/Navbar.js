@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: "#2196f3" }}>
+    <AppBar position="fixed" sx={{ backgroundColor: "rgb(3, 55, 118)" }}>
       <Toolbar>
         {/* App title/logo */}
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
@@ -25,7 +25,7 @@ const Navbar = () => {
             to="/"
             style={{ textDecoration: "none", color: "inherit" }}
           >
-            MyApp
+            Edu Lanka
           </RouterLink>
         </Typography>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
             <>
               <Button
                 component={RouterLink}
-                to="/login"
+                to="/LoginPage"
                 color="inherit"
                 sx={{ textTransform: "none" }}
               >
@@ -43,11 +43,27 @@ const Navbar = () => {
               </Button>
               <Button
                 component={RouterLink}
-                to="/register"
+                to="/RegisterPage"
                 color="inherit"
                 sx={{ textTransform: "none" }}
               >
                 Register
+              </Button>
+              <Button
+                component={RouterLink}
+                to="/RegisterPage"
+                color="inherit"
+                sx={{ textTransform: "none" }}
+              >
+                ABOUT
+              </Button>
+              <Button
+                component={RouterLink}
+                to="/RegisterPage"
+                color="inherit"
+                sx={{ textTransform: "none" }}
+              >
+                CONTACT
               </Button>
             </>
           ) : (
