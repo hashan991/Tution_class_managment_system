@@ -1,3 +1,4 @@
+
 import React from "react";
 import pngwing from "../assets/pngwing.png";
 import pngwing1 from "../assets/qqq.png";
@@ -460,5 +461,6 @@ const StartupPage = () => {
     </Box>
   );
 };
+
 
 export default StartupPage;
