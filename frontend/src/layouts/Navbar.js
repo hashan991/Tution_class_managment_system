@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
-import { Link as RouterLink, useNavigate } from 'react-router-dom';
-import AuthContext from '../context/AuthContext';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import React, { useContext } from "react";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
+import AuthContext from "../context/AuthContext";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
@@ -13,15 +13,18 @@ const Navbar = () => {
 
   const handleLogout = () => {
     logout();
-    navigate('/');
+    navigate("/");
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#2196f3' }}>
+    <AppBar position="fixed" sx={{ backgroundColor: "#2196f3" }}>
       <Toolbar>
         {/* App title/logo */}
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          <RouterLink to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <RouterLink
+            to="/"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
             MyApp
           </RouterLink>
         </Typography>
@@ -34,7 +37,7 @@ const Navbar = () => {
                 component={RouterLink}
                 to="/login"
                 color="inherit"
-                sx={{ textTransform: 'none' }}
+                sx={{ textTransform: "none" }}
               >
                 Login
               </Button>
@@ -42,20 +45,20 @@ const Navbar = () => {
                 component={RouterLink}
                 to="/register"
                 color="inherit"
-                sx={{ textTransform: 'none' }}
+                sx={{ textTransform: "none" }}
               >
                 Register
               </Button>
             </>
           ) : (
             <>
-              <Typography variant="body1" sx={{ marginRight: '1rem' }}>
+              <Typography variant="body1" sx={{ marginRight: "1rem" }}>
                 Welcome, {user.name}
               </Typography>
               <Button
                 onClick={handleLogout}
                 color="inherit"
-                sx={{ textTransform: 'none' }}
+                sx={{ textTransform: "none" }}
               >
                 Logout
               </Button>
