@@ -444,7 +444,7 @@ const StartupPage = () => {
         </Box>
       </Box>
 
-      <Footer/>
+      <Footer />
     </Box>
   );
 };
