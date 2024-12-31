@@ -15,33 +15,19 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import Footer from "../layouts/Footer";
+import Navbar from "../layouts/Navbar";
 
 const StartupPage = () => {
   return (
     <Box>
       {/* Navbar */}
 
-      <AppBar position="static" sx={{ backgroundColor: "rgb(3, 55, 118)" }}>
-        <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            First Edu Lanka
-          </Typography>
-          <Button color="inherit" component={Link} to="/HomePage">
-            Home
-          </Button>
-          <Button color="inherit" component={Link} to="/AboutPage">
-            About
-          </Button>
-          <Button color="inherit" component={Link} to="/ContactPage">
-            Contact
-          </Button>
-        </Toolbar>
-      </AppBar>
+      <Navbar />
 
       {/* Main Content */}
       <Box
         sx={{
-          height: "calc(80vh - 64px)", // Adjust height to account for the navbar
+          height: "calc(90vh - 64px)", // Adjust height to account for the navbar
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -57,7 +43,7 @@ const StartupPage = () => {
             variant="h3"
             sx={{ fontWeight: "bold", mb: 3 }}
           >
-            Welcome First Edu Lanka
+            Welcome Edu Lanka
           </Typography>
 
           {/* Subheading */}
@@ -457,6 +443,8 @@ const StartupPage = () => {
           </Button>
         </Box>
       </Box>
+
+      <Footer />
     </Box>
   );
 };
