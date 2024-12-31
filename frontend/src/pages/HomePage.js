@@ -16,8 +16,7 @@ const HomePage = () => {
   return (
     <Box>
       <Navbar />
-      <button onClick={() => navigate("/ExamTablePage")}>VIEW Exam</button>
-      <button onClick={() => navigate("/ExamFormPage")}>ADD Exam</button>
+     
       <Box
         sx={{
           height: "100vh", // Full viewport height
@@ -58,7 +57,7 @@ const HomePage = () => {
           <Grid item>
             <Button
               variant="outlined"
-              color="secondary"
+              color="balck"
               size="large"
               sx={{ px: 4, py: 1.5 }}
             >

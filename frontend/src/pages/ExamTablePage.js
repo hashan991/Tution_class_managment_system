@@ -40,8 +40,8 @@ const handleEdit = (exam3) => {
 
     return(
         <div>
-        <h1>Item List</h1>
-        <button onClick={() => navigate('/ExamFormPage')}>Add Item</button>
+        
+        
         <ExamTable exams={exams} onEdit={handleEdit} onDelete={handleDelete}/>
 
       </div>
