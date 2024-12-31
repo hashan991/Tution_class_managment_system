@@ -54,7 +54,7 @@ const LoginForm = () => {
       <Box
         sx={{
           background: "linear-gradient(to right, #6a11cb, #2575fc)",
-          minHeight:"calc(100vh - 64px)",
+          minHeight:"calc(100vh)",
           display: "flex",
           flexDirection: "column",
         }}
