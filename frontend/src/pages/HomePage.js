@@ -394,6 +394,7 @@ const HomePage = () => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           color: "#fff",
+          
           textAlign: "center",
         }}
       >
